@@ -1,0 +1,843 @@
+<html class='v2' dir='ltr' lang='id' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<!--[ <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ Open ]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!--[ meta for browser ]-->
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<meta content='max-image-preview:large' name='robots'/>
+<!--[ SingleItem title ]-->
+<title>Writer - PocketMine-MP Dev</title>
+	<link rel="canonical" href="https://www.poggitdev.netlify.app/p/writer.html" />
+<!--[ Favicon ]-->
+<link href='../favicon.ico' rel='apple-touch-icon' sizes='120x120'/>
+<link href='../favicon.ico' rel='apple-touch-icon' sizes='152x152'/>
+<link href='../favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='../favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+<!--[ Open graph ]-->
+<meta content='Writer' property='og:title'/>
+<meta content='https://www.poggitdev.netlify.app/p/writer.html' property='og:url'/>
+<meta content='PocketMine-MP Dev' property='og:site_name'/>
+<meta content='article' property='og:type'/>
+<meta content='' property='og:description'/>
+<meta content='Writer' property='og:image:alt'/>
+<meta content='Add_your_image_url_here' property='og:image'/>
+<!--[ Twitter card ]-->
+<meta content='Writer' name='twitter:title'/>
+<meta content='https://www.poggitdev.netlify.app/p/writer.html' name='twitter:url'/>
+<meta content='' name='twitter:description'/>
+<meta content='summary_large_image' name='twitter:card'/>
+<meta content='Writer' name='twitter:image:alt'/>
+<meta content='Add_your_image_url_here' name='twitter:image:src'/>
+<!-- Site Owner -->
+<meta content='InpuTekno' name='Author'/>
+<link href='https://www.facebook.com/#' rel='me'/>
+<link href='https://www.facebook.com/#' rel='author'/>
+<link href='https://www.facebook.com/#' rel='publisher'/>
+<meta content='#' property='fb:admins'/>
+<meta content='#' property='fb:pages'/>
+<meta content='#' property='fb:app_id'/>
+<meta content='https://www.facebook.com/#' property='article:author'/>
+<meta content='https://www.facebook.com/#' property='article:publisher'/>
+<meta content='@inputekno' name='twitter:site'/>
+<meta content='@inputekno' name='twitter:creator'/>
+<!-- Sife Verification -->
+<script async='async' src='../js/sharethis.js' type='text/javascript'></script>
+<meta content='#' name='_mg-domain-verification'/>
+<meta content='#' name='google-site-verification'/>
+<meta content='#' name='msvalidate.01'/>
+<meta content='#' name='yandex-verification'/>
+<meta content='#' name='p:domain_verify'/>
+<meta content='#' name='hitads'/>
+<meta content='#' name='dmca-site-verification'/>
+<meta content='#' name='ahrefs-site-verification'/>
+<meta content='#' name='follow_it-verification-code'/>
+<meta content='inputekno' name='copyright'/>
+<!--[ Another CSS Link ]-->
+<link href='../pmmpdev-css.css' rel='stylesheet'/>
+<link href='../npm/bootstrap-5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'/>
+<link href='../npm/bootstrap-icons-1.10.5/font/bootstrap-icons.css' rel='stylesheet'/>
+<!--[ CSS stylesheet ]-->
+<style id='page-skin-1' type='text/css'><!--
+*{font-family: sans-serif;box-sizing:border-box}
+#wrapper{padding-top:10px}
+article#article-wrapper {padding-right: 0rem!important;padding-left: 0rem!important;}
+:root {
+--color-text-ab:#adb5bd;
+--color-text-hd:#dee2e6;
+--it-text-opacity:1;
+--it-border-opacity:1;
+--it-font-body:1.5rem;
+--color-border:rgb(0 0 0 / 10%);
+--color-border-dark:rgb(255 255 255 / 30%);
+--space-block:1.75rem;
+--line-height:1.75;
+--space-headings:1.5rem;
+--w-canva:246px;
+}
+/* CSS Body Article */
+.post-body{color:var(--bs-dark-text-emphasis);line-height:var(--line-height);--space-block:1.75rem}
+.post-body h1, .post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body h6{margin-bottom:var(--space-headings);font-weight:600;color:var(--bs-secondary-text-emphasis);display:flex;align-items:center}
+.post-body h1{font-size:1.75rem}
+.post-body h2{border-top:1px solid var(--color-border);padding-top:var(--space-block);font-size:clamp(1.25rem, 5vw, 1.3rem);}
+.post-body h3{font-size:1.125rem}
+.post-body h4, .post-body h5, .post-body h6{font-size:1rem}
+.tooltip {--bs-tooltip-bg: var(--bs-indigo);}
+/* Darkmode */
+[data-bs-theme="dark"] .comments .comment-block{border:1px solid var(--bs-border-color-translucent)}
+[data-bs-theme="dark"] .comments li li .comment-header{border-bottom:1px solid var(--bs-border-color-translucent)}
+[data-bs-theme="dark"] .comments .comment-block a{color:var(--bs-dark-text-emphasis)}
+[data-bs-theme="dark"] .comments .comments-content .comment-content{color:var(--bs-emphasis-color)}
+[data-bs-theme="dark"] #threaded-comment-form iframe html{background-color:var(--bs-card-bg)}
+[data-bs-theme="dark"] .post-body h1, .post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body h6{color:var(--bs-dark-text-emphasis)}
+[data-bs-theme="dark"] .post-body h2{border-top:1px solid var(--color-border-dark)}
+/* Off Canvas Menu */
+.offcanvas.offcanvas-start {width:var(--w-canva);border-top-right-radius:10px;border-bottom-right-radius:10px}
+#offcanvasMenus .offcanvas-footer .widget-social .btn svg{width:15px;height:15px}
+/* Responsive */
+.container::after, .float-container::after{display:none}
+@media screen and (max-width: 576px) {.container.pt-5.px-5, .Footer-menu.p-3.py-5, .container.mx-auto.p-3, .header-hero {padding-right: 1rem!important;padding-left: 1rem!important;}}
+@media (max-width: 1024px) {.container {max-width:900px}}
+@media screen and (max-width: 576px) {article#article-wrapper {padding-right: 0rem!important;padding-left: 0rem!important;}}
+/* Icon Label */
+.Lb-info a{color:var(--text-body-secondary);text-decoration:none;display:flex;align-items:center;height:20px;width:100%}
+.Lb-info a::before{margin-right:2.5px;width:20px}
+.Lb-info a.Virions{content:"V"}
+.Lb-info a.Blogger::before{content:url("data:image/svg+xml,%3Csvg height='16' width='16' fill='%23fff' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cpath d='M27.4 12h-.9c-.8 0-1.5-.7-1.5-1.5C25 5.8 21.2 2 16.5 2h-6C5.8 2 2 5.8 2 10.5v11c0 4.7 3.8 8.5 8.5 8.5h11c4.7 0 8.5-3.8 8.5-8.5v-6.9c0-1.4-1.2-2.6-2.6-2.6zM11 8h5c1.7 0 3 1.3 3 3s-1.3 3-3 3h-5c-1.7 0-3-1.3-3-3s1.3-3 3-3zm9 16h-9c-1.7 0-3-1.3-3-3s1.3-3 3-3h9c1.7 0 3 1.3 3 3s-1.3 3-3 3z'/%3E%3C/svg%3E");}
+.Lb-info a.Paid::before{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M21 4H7a2 2 0 1 0 0 4h14v13a1 1 0 0 1-1 1H7a4 4 0 0 1-4-4V6a4 4 0 0 1 4-4h13a1 1 0 0 1 1 1v1ZM5 18a2 2 0 0 0 2 2h12V10H7a3.982 3.982 0 0 1-2-.535V18ZM20 7H7a1 1 0 0 1 0-2h13v2Z'/%3E%3C/svg%3E");}
+.Lb-info a.Code::before{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M9 3V5H6V19H9V21H4V3H9ZM15 3H20V21H15V19H18V5H15V3Z'%3E%3C/path%3E%3C/svg%3E");}
+.Lb-info a.Free::before{content:url("data:image/svg+xml,%3Csvg width='16' height='16' fill='%23fff' viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M234.965 123.484A12.002 12.002 0 0 0 231.45 115L123.966 7.515a12 12 0 0 0-16.97 0L69.737 44.77 46.343 21.378a12 12 0 0 0-16.97 16.972l23.394 23.393-41.939 41.939a28.033 28.033 0 0 0 0 39.597l84.858 84.857a27.999 27.999 0 0 0 39.597 0l96.167-96.166a12.002 12.002 0 0 0 3.515-8.486Zm-116.653 87.682a4 4 0 0 1-5.656 0L27.8 126.309a4.005 4.005 0 0 1 0-5.657l41.94-41.94 21.78 21.778a36.002 36.002 0 0 0 57.937 40.966 35.997 35.997 0 0 0-40.967-57.937L86.71 61.74l28.771-28.77 90.514 90.513ZM124 104.006a11.994 11.994 0 1 1-8.485 3.509 11.963 11.963 0 0 1 8.485-3.51Zm108.486 63.51a12 12 0 0 0-16.972 0C213.106 169.923 192 191.736 192 216a32 32 0 0 0 64 0c0-24.263-21.106-46.077-23.514-48.484ZM224 224a8.01 8.01 0 0 1-8-8c0-6.923 3.838-14.652 7.992-20.886C228.135 201.342 232 209.1 232 216a8.01 8.01 0 0 1-8 8Z'/%3E%3C/svg%3E");}
+/* Icon Share */
+.modal-content [aria-label="Email"]:hover, .modal-content [aria-label="LINE"]:hover, .modal-content [aria-label="WhatsApp"]:hover, .modal-content [aria-label="Facebook"]:hover, .modal-content [aria-label="Twitter"]:hover, .modal-content [aria-label="Linkedin"]:hover, .modal-content [aria-label="Telegram"]:hover{border:none}
+.modal-content [aria-label="Email"]:hover{background:var(--bs-indigo)}
+.modal-content [aria-label="LINE"]:hover, .modal-content [aria-label="WhatsApp"]:hover{background:var(--bs-teal)}
+.modal-content [aria-label="Facebook"]:hover, .modal-content [aria-label="Twitter"]:hover, .modal-content [aria-label="Linkedin"]:hover, [aria-label="Telegram"]:hover{background:var(--bs-primary)}
+--></style>
+<style type='text/css'>
+/* Header Navigation */
+header .header-widget .badge{--bs-badge-font-size:0.6em}
+header .navbar a{color:var(--bs-emphasis-color)!important}
+header .navbar a:hover{color:var(--bs-nav-link-hover-color)!important}
+/* CSS Togle Nav */
+.ToggleDrk .dropdown-menu, .dropdown-menu {
+--bs-dropdown-font-size: .875rem;
+--bs-dropdown-padding-x: .25rem;
+--bs-dropdown-padding-y: .25rem;
+--bs-dropdown-link-active-bg: var(--bs-purple);
+--bs-dropdown-border-color: var(--bs-body-color-rgb)
+}
+.ToggleDrk .dropdown-menu .active{font-weight:600;}
+.ToggleDrk .dropdown-menu .dropdown-item{border-radius:0.25rem}
+.ToggleDrk .dropdown-menu-end{--bs-dropdown-min-width:8rem}
+.ToggleDrk .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {border-color: var(--bs-btn-border-color)}
+.ToggleDrk .dropdown-toggle::after{display:none}
+/* Ads Sidebar Page */
+.adB{min-height: 70px;display:flex;align-items:center;justify-content:center;font-size:13px;color: #989b9f;border: 1px solid #e6e6e6;border-radius:3px;;}
+.adB::before{content:attr(data-text)}
+/* DMCA */
+.made-support a{text-decoration:none}
+.dmca-sample{font-size:9px;color:rgba(254,254,254,.6);border-radius:3px;overflow:hidden}
+.dmca-sample:before{content:'DMCA';padding:5px 10px;background-color:rgb(29 33 36);border-radius: 3px 0 0 3px}
+.dmca-sample:after{content:'Protected';color:#202442;padding:5px 10px;background-color:#c5c5c5;border-radius: 0 3px 3px 0}
+/*Comment*/
+.Cmt a{display:flex;align-items:center}
+.Cmt a::after{margin-left:2.5px;height:20px;width:20px}
+.Cmt a::before{content:attr(data-text)}
+.Cmt a::after{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' transform='matrix(-1,0,0,-1,0,0)'%3E%3Cpath d='M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994V8.994ZM20 19V8.994A4.004 4.004 0 0 0 16 5H8a3.99 3.99 0 0 0-4 3.994v6.012A4.004 4.004 0 0 0 8 19h12Zm-6-8h2v2h-2v-2Zm-6 0h2v2H8v-2Z'%3E%3C/path%3E%3C/svg%3E")}
+.comments .avatar-image-container img {max-width: 36px;}
+label.thread-toggle.thread-expanded {float: none;padding: 0;color: #444;text-align: left;}
+.comment-add .comment-reply{display:block;cursor:pointer}
+.comment-add .hidden, .comment-add .comment-reply.hidden{display:none}
+.comments{margin-top:30px}
+.comments .comments-content{margin-bottom:35px}
+.comments .comment-disable{text-align:center}
+.comments ol, .comments ul{list-style:none;margin:0;padding:0}
+.comments li:not(:last-child){margin-bottom:15px}
+.comments li a{color:inherit;text-decoration:none}
+.comments li .avatar-image-container{float:left;margin-top:0.5rem;max-height:36px;overflow:hidden;width:36px}
+.comments li .comment-header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(0, 0, 0, 0.175);margin:0 0 8px}
+.comments li .comment-header .datetime{margin-left:auto!important;font-size:11px;}
+.comments li .comment-header .datetime a{color:#989b9f}
+.comments li .comment-header .user{flex:0 0 auto;display:flex;align-items:center;font-weight:700;}
+.comments li .comment-header .user span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:120px}
+.comments li .comment-header .user svg{width:16px;height:16px;fill:#519bd6;margin:0 0 0 5px}
+.comments li .comment-content{line-height:1.58em;overflow:hidden;text-overflow:ellipsis;margin:0 0 8px}
+.comments li .comment-actions, .comments li .comment-replies .comment-reply{margin:8px 0 0 auto}
+.comments li .comment-replies + .comment-actions{display:none}
+.comments li .comment-replies{margin-left:36px;margin-top:1rem}
+.comments li .comment-replies .thread-toggle{display:flex;align-items:center;margin-left:1rem}
+.comments li .comment-replies .thread-toggle svg, .comments li .comment-replies .comment-reply svg, .comments li .comment-actions svg{width:14px;height:14px;margin-right:5px}
+.comments li .comment-replies .thread-show:checked + .comment-thread .thread-toggle svg{-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+.comments li .comment-replies .thread-show:checked + .comment-thread .thread-chrome,
+.comments li .comment-replies .thread-show:checked + .comment-thread + .comment-reply{display:none}
+.comments li .comment-replies .comment-reply, .comments li .comment-actions{width:calc(100% - 55px);display:flex;align-items:center;}
+.comments li .comment-replies input{display:none}
+.comments li .comment-replybox-single{margin-top:20px}
+.comments li li:not(:last-child){margin-bottom:10px}
+.comments li li .comment-header{height:initial;margin:0 0 10px;padding:0}
+.comments li li .comment-header .datetime{width:initial}
+#threaded-comment-form iframe{width:100%}
+.comments .comments-content .comment:first-child {padding-top: 16px;}
+.comments .comment-block { margin-left: 48px;position: relative;border: 1px solid rgba(0, 0, 0, 0.175);padding: 0.75rem;max-width: 100%;border-radius: 0.375rem;}
+/* Footer Widget */
+footer::before {content: '';height: 5px;background-color: var(--bs-indigo);display: block;}
+footer .widget h3 {font-weight: 700!important;font-size: 1rem!important;margin-bottom: 0.5rem!important;color:rgb(255 255 255/var(--it-text-opacity));}
+footer .card-footer a {color:rgb(255 255 255/var(--it-text-opacity));text-decoration:none}
+footer .border-T{border-top:1px solid rgb(51 65 85/var(--it-border-opacity));}
+footer .widget .widget-content ul{list-style:none;padding:0rem!important}
+footer .widget .widget-content ul li{margin-top:.2rem}
+footer .footer-sosial{background:rgb(29 33 36)}
+.Footer-menu .container, .Footer-menu .container a{color:var(--color-text-ab);text-decoration:none}
+.Footer-menu .container a:hover, footer .card-footer a:hover {color:var(--bs-indigo);}
+.post-header-line-1 .g-profile span::after {content: '\2014';margin: 0 5px;}
+/* Sidebar Widget */
+#sidebar-wrapper .sticky-top{top:calc(50px + 2rem)}
+#sidebar-wrapper .widget{padding-bottom:2rem}
+#sidebar-wrapper .widget h3{font-size:1rem!important;font-weight:700;margin-bottom:1rem!important;color:var(--bs-secondary-color)!important;--bs-text-opacity:1}
+/* Syntax */
+.post-body .PreC {position:relative;overflow:hidden;margin:1.7em auto;font-family:var(--bs-body-font-family)}
+.post-body .PreC pre{width:100%;margin:0;background:var(--bs-tertiary-bg);padding:30px 20px 20px;border-radius:5px;font-size:.8rem;overflow:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;-ms-overflow-style:none;-webkit-overflow-scrolling:touch; white-space: pre;line-height:1.6em;}
+.post-body .PreC::before{content:'\F2C7';display:flex;justify-content:flex-end;position:absolute;right:0;top:0;width:100%;background:inherit;color:var(--synxGray);font-size:14px;padding:0 10px;z-index:2;line-height:30px;font-family:'Bootstrap-icons',var(--bs-body-font-family)}
+.post-body .PreC.html::before{content:'\F749'} .post-body .PreC.css::before{content:'\F742'} .post-body .PreC.js::before{content:'\F74C'}
+</style>
+<style type='text/css'>
+#outer-wrapper .image-article {margin-top:5px;margin-bottom:15px}
+/* Table Of Content Widget */
+.toc-list{width:100%;position:relative;box-shadow:2px 0 0 0 #0000001a inset;list-style:none;padding-left:0}
+.toc-list.is-collapsible .toc-link{padding-left:2.25rem}
+.toc-list.is-collapsed{display:none}
+.toc-link{display:block;color:#495057;padding:.75rem 1rem .75rem 1.5rem;transition:.5s}
+.toc-list-item a{text-decoration:none}
+.toc-link.is-active-link{background-color:#eceff1;font-weight:500;box-shadow:2px 0 0 0 #495057 inset}
+@media (min-width:992px){.docs-toc .scroll{max-height:calc(100vh - 3.5rem - 44px)}}
+</style>
+<script type='application/ld+json'>
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.poggitdev.netlify.app/",
+    "name": "PocketMine-MP Dev",
+    "alternateName": "PocketMine-MP Dev",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.poggitdev.netlify.app/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+</script>
+<!-- Pengalihan URL Mobile -->
+<script src='../ajax/libs/tocbot/4.18.2/tocbot.min.js'></script>
+</head><!--<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7434658898468603518&amp;zx=9fcca360-b724-4d2d-9dd4-52de1b7fbfe3' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7434658898468603518&amp;zx=9fcca360-b724-4d2d-9dd4-52de1b7fbfe3' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>-->
+<body class='bg-body-tertiary'>
+<div class='mt-5' id='wrapper'>
+<header>
+<!-- PopUp: Download Button -->
+<div aria-hidden='true' aria-labelledby='downloadPopUp' class='modal fade' id='downloadPopUp' tabindex='-1'>
+<div class='modal-dialog modal-dialog-centered'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h1 class='modal-title fs-5' id='downloadPopUp'>Download Link</h1>
+<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
+</div>
+<div class='modal-body'>Silahkan pilih type plugin yang ingin anda unduh.</div>
+<div class='modal-footer'>
+<a class='btn btn-primary' id='zipFile' type='button'>(.zip) File</a>
+<a class='btn btn-primary' id='pharFile' type='button'>(.phar) File</a>
+</div>
+</div>
+</div>
+</div>
+<!-- PopUp: Paid Plugin -->
+<div aria-hidden='true' aria-labelledby='paidPlugin' class='modal fade' id='paidPlugin' tabindex='-1'>
+<div class='modal-dialog modal-dialog-centered'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h1 class='modal-title fs-5' id='paidPlugin'>Paid Plugin</h1>
+<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
+</div>
+<div class='modal-body'><span id='namaPlugin'></span> ini dijual seharga IDR <span id='hargaPlugin'></span>. Jika anda tertarik ingin membeli plugin tersebut, silahkan chat penjual dibawah ini.</div>
+<div class='modal-footer'>
+<a class='btn btn-primary' id='nomorWa' type='button'>Chat</a>
+</div>
+</div>
+</div>
+</div>
+<!--[ Main menu ]-->
+<nav class='navbar navbar-expand-lg bg-body-tertiary border-bottom fixed-top px-sm-3'>
+<!-- Header Navigasi -->
+<div class='container'>
+<div class='section' id='navbar'><div class='widget Header' data-version='2' id='Header1'>
+<div class='header-widget navbar-brand d-flex align-items-center gap-2 fs-6 text-body'>
+<a class='header-image-wrapper link-underline link-underline-opacity-0' href='../index.html'>
+<img alt='PocketMine-MP Dev' class='d-inline-block align-top' src='../images/w200/3150836.png' width='26'/>
+<span class='fw-bold text-body-emphasis'>PocketMine-MP</span>
+</a>
+<p><small class='badge text-bg-secondary'>
+      Developer
+    </small></p>
+</div>
+</div>
+<div class='widget HTML' data-version='2' id='HTML28'>
+<script>/*<![CDATA[*/ var uri = window.location.toString();if (uri.indexOf("?m=1","?m=1") > 0) {var clean_uri = uri.substring(0, uri.indexOf("?m=1"));window.history.replaceState({}, document.title, clean_uri); }; /*]]>*/</script>
+</div>
+</div>
+<div class='justify-content-end d-flex align-items-center'>
+<a aria-controls='offcanvasMenus' class='nav-link d-flex align-items-center me-2' data-bs-toggle='offcanvas' href='#offcanvasMenus' role='button'>
+<i class='bi bi-three-dots-vertical me-1'></i> Menu
+      </a>
+<!-- Menu Navigation -->
+<button aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-bs-auto-close='true' data-bs-target='#navbarSupportedContent' data-bs-toggle='collapse' type='button'><span class='navbar-toggler-icon'></span></button>
+</div>
+<div class='collapse navbar-collapse' id='navbarSupportedContent'>
+<ul class='navbar-nav me-auto mb-2 mb-lg-0'>
+<li class='nav-item'>
+<a aria-current='page' class='nav-link d-flex align-items-center' href='../index.html'>
+<i class='bi bi-house me-1'></i> Beranda
+              </a>
+</li>
+<li class='nav-item'>
+<a class='nav-link d-flex align-items-center' href='../search.html'>
+<i class='bi bi-file-earmark-text me-1'></i> All Plugin
+              </a>
+</li>
+<li class='nav-item'>
+<a class='nav-link d-flex align-items-center' href='../p/forum.html'>
+<i class='bi bi-file-earmark-text me-1'></i> Forum Diskusi
+              </a>
+</li>
+<li class='nav-item dropdown'>
+<a aria-expanded='false' class='nav-link dropdown-toggle d-flex align-items-center' data-bs-toggle='dropdown' href='#' role='button'>
+<i class='bi bi-grid me-1'></i> About
+              </a>
+<ul class='dropdown-menu shadow-sm rounded'>
+<li><a class='dropdown-item' href='../p/about.html'>About Us</a></li>
+<li><a class='dropdown-item' href='../p/contact.html'>Contact</a></li>
+<li><hr class='dropdown-divider'/></li>
+<li><a class='dropdown-item' href='../p/sitemap.html'>Sitemap</a></li>
+</ul>
+</li>
+<!--<li class='nav-item dropdown'> <a aria-expanded='false' class='nav-link dropdown-toggle d-flex align-items-center' data-bs-toggle='dropdown' href='#' role='button'> <i class='bi bi-grid me-1'/> Mode </a> <ul class='dropdown-menu shadow-sm rounded'> <li><button class='dropdown-item' data-bs-theme-value='auto' type='button'/>Auto</li> <li><button class='dropdown-item' data-bs-theme-value='light' type='button'/>Light</li> <li><button class='dropdown-item' data-bs-theme-value='dark' type='button'/>Dark</li> </ul> </li>-->
+</ul>
+<form action='../search.html' class='mb-0' role='search'>
+<div class='input-group'>
+<input aria-label='Cari blog ini' autocomplete='off' class='form-control search' name='q' placeholder='Search...' style='width: auto' type='search'/>
+<button class='btn btn-outline-secondary' style='--bs-btn-border-color:var(--bs-border-color)' type='submit'>
+<svg class='bi bi-search' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'></path></svg>
+</button>
+</div>
+</form>
+<ul class='ToggleDrk navbar-nav mb-2 mb-lg-0 ms-2'>
+<li class='nav-item dropdown'>
+<button aria-expanded='false' aria-label='Toggle Dark Mode' class='btn nav-link dropdown-toggle' data-bs-title='Dark Mode' data-bs-toggle='dropdown' type='button'>
+<i class='bi bi-sun-fill theme-icon-active' data-theme-icon-active='bi-sun-fill'></i>
+</button>
+<ul class='dropdown-menu dropdown-menu-end shadow-sm rounded'>
+<li>
+<button class='dropdown-item d-flex align-items-center' data-bs-theme-value='light' type='button'>
+<i class='bi bi-sun-fill me-2' data-theme-icon='bi-sun-fill'></i> Light</button>
+</li>
+<li>
+<button class='dropdown-item d-flex align-items-center' data-bs-theme-value='dark' type='button'>
+<i class='bi bi-moon-fill me-2' data-theme-icon='bi-moon-fill'></i> Dark</button>
+</li>
+<li>
+<button class='dropdown-item d-flex align-items-center' data-bs-theme-value='auto' type='button'>
+<i class='bi bi-circle-half me-2' data-theme-icon='bi-circle-half'></i> Auto</button>
+</li>
+</ul>
+<!--<ul class='TranslateItm navbar-nav mb-2 mb-lg-0 ms-2'> <li class='nav-item dropdown'> <button aria-expanded='false' aria-label='Toggle TranslateItm' class='btn nav-link dropdown-toggle' data-bs-offset='10,20' data-bs-title='Translate' data-bs-toggle='dropdown' type='button'> <i class='bi bi-translate theme-icon-active' data-theme-icon-active='bi-translate'/> </button> <ul class='dropdown-menu dropdown-menu-end shadow-sm rounded'> <li> <button class='dropdown-item d-flex align-items-center' data-google-lang='en' type='button'>Default</button> </li> <li> <button class='dropdown-item d-flex align-items-center' data-google-lang='id' href='/?hl=id' type='button'>Indonesia</button> </li> <li> <button class='dropdown-item d-flex align-items-center' data-google-lang='de' href='/?hl=de' type='button'>Japan</button> </li> </ul> </li> </ul>-->
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Hero Home Page -->
+</header>
+<!--[ OffCanva menu ]-->
+<nav class='NavCanva'>
+<div class='secIn section' id='OffCanvasMenu'><div class='widget LinkList' data-version='2' id='LinkList1'>
+<div aria-labelledby='offcanvasMenuLabel' class='offcanvas offcanvas-start' data-bs-scroll='true' id='offcanvasMenus' tabindex='-1'>
+<div class='offcanvas-header'>
+<h3 class='offcanvas-title fw-semibold fs-5' id='offcanvasMenuLabel'>PocketMine-MP Dev</h3>
+<button aria-label='Close' class='btn-close' data-bs-dismiss='offcanvas' type='button'></button>
+</div>
+<div class='offcanvas-body'>
+<div class='widget-content'>
+<ul class='list-group list-group-flush'>
+<a class='list-group-item' href='../p/author.html'>
+<i class='bi bi-link-45deg'></i>
+Author
+</a>
+<a class='list-group-item' href='../p/changelog.html'>
+<i class='bi bi-link-45deg'></i>
+Changelog
+</a>
+<a class='list-group-item' href='../search/label/Free.html'>
+<i class='bi bi-link-45deg'></i>
+Free Plugin
+</a>
+<a class='list-group-item' href='../search/label/Paid.html'>
+<i class='bi bi-link-45deg'></i>
+Paid Plugin
+</a>
+<a class='list-group-item' href='../p/request.html'>
+<i class='bi bi-link-45deg'></i>
+Request Plugin
+</a>
+</ul>
+</div>
+</div>
+</div>
+</div></div>
+</nav>
+<div class='container pt-5 px-5'>
+<div class='row'>
+<!--[ Start Row ]-->
+<section class='col' id='outer-wrapper'>
+<article class='container px-4' id='article-wrapper'>
+<!-- Main Content -->
+<div class='section' id='main'><div class='widget Blog' data-version='2' id='Blog1'>
+<div class='contain'>
+<article class='post-outer-container card mb-3 border border-0 shadow-sm p-3 rounded'>
+<div class='post-outer'>
+<div class='post'>
+<script type='application/ld+json'>
+        {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "../p/writer.html"
+        },
+        "headline": "Writer",
+        "description": "Syarat \u0026amp; Ketentuan     Memiliki umur 15+.    Bisa bahasa pemograman HTML, CSS, dan Javascript.    Mengetahui seputar Minecraft.    Mengetahui seputar PocketMine-MP    Menghormati sesama penulis    Larangan     Dilarang menjual plugin dengan fitu&#8230;",
+        "articleBody": "Syarat \u0026amp; Ketentuan Memiliki umur 15+. Bisa bahasa pemograman HTML, CSS, dan Javascript. Mengetahui seputar Minecraft. Mengetahui seputar PocketMine-MP Menghormati sesama penulis Larangan Dilarang menjual plugin dengan fitur rendah \u0026amp; harga mahal. Dilarang menjual plugin yang awal dibagikan secara Gratis . Dilarang menjual plugin yang memiliki fitur rendah. Dilarang membagikan plugin Rusak . Dilarang promosi di Website tanpa izin admin. Dilarang berjualan selain plugin. Dilarang menghapus postingan plugin (harus izin admin/penulis plugin tersebut.) Biaya Harga penulis hanya IDR 10.000 saja, aktif selamanya. Jika admin yang mengundang kalian biayanya Gratis . Minat untuk bergabung? silahkan chat admin Disini",
+        "datePublished": "2024-07-21T05:32:00-07:00",
+        "dateModified": "2024-07-21T18:15:41-07:00",
+      "image": {
+        "@type": "ImageObject",
+        "url": "../icon-inputekno/logo-inputekno-horizontal.webp",
+        "height": 348,
+        "width": 1200
+      },
+     "publisher": {
+        "@type": "Organization",
+        "name": "PocketMine-MP Dev",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "../icon-inputekno/logo-inputekno-horizontal.webp",
+          "width": 206,
+          "height": 60
+        }
+      },
+        "author": {
+          "@type": "Person",
+          "name": "Mrchll",
+          "url": "https://www.blogger.com/profile/02437236213195605422",
+          "image": "../images/s220/20231226_114739.jpg"
+        }
+        }
+      </script>
+<a name='7097413492558291100'></a>
+<div class='row px-3 border-bottom'>
+<div class='col-9 card-body p-auto'>
+<h1 class='post-title entry-title fs-4 card-title'>
+Writer
+</h1>
+<span class='card-text'>
+</span>
+</div>
+<div class='col my-2 d-flex align-self-start justify-content-end align-items-center'>
+<button class='btn' data-bs-target='#shareModal' data-bs-toggle='modal'>
+<svg class='bi bi-share' fill='currentColor' height='18' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+<path d='M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z'></path>
+</svg>
+</button>
+<div aria-hidden='true' aria-labelledby='shareModalLabel' class='modal fade' id='shareModal' tabindex='1'>
+<div class='modal-dialog modal-dialog-centered'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h5 class='modal-title text-body-emphasis mb-0' id='shareModalLabel'>Share article</h5>
+<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' id='closeWilltoCopyPostUrl' type='button'></button>
+</div>
+<div class='modal-body'>
+<div class='d-flex'>
+<div class='flex-grow-1'>
+<input class='form-control-plaintext form-control-sm' id='sharePostUrl' readonly='readonly' style='background-color:rgb(247,248,250); padding-left: 10px; padding-right: 10px;' type='url' value='https://www.poggitdev.netlify.app/p/writer.html'/>
+</div>
+<button class='btn btn-primary btn-sm ms-2' onclick='copyPostUrl()' type='button'>Copy</button>
+</div>
+</div>
+<div class='d-grid gap-2 d-md-flex justify-content-md-between p-3'>
+<button class='btn btn-secondary icon-link disabled' type='submit'>Share <i class='bi bi-arrow-right-short'></i></button>
+<main class='ShareIcn d-flex gap-1 flex-wrap justify-content-between'>
+<a class='btn btn-outline-secondary' data-bs-placement='bottom' data-bs-toggle='tooltip' href='mailto:?body=https://www.poggitdev.netlify.app/p/writer.html' role='button' target='_blank' title='Email'>
+<svg class='bi bi-envelope-fill' fill='currentColor' height='25' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+<path d='M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z'></path>
+</svg>
+</a>
+<a class='btn btn-outline-secondary' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://timeline.line.me/social-plugin/share?url=https://www.poggitdev.netlify.app/p/writer.html' role='button' target='_blank' title='LINE'>
+<svg class='bi bi-line' fill='currentColor' height='25' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+<path d='M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.932-5.431 4.285-6.285 4.645-.83.35-.734-.197-.696-.413l.003-.018.114-.685c.027-.204.055-.521-.026-.723-.09-.223-.444-.339-.704-.395C2.846 12.39 0 9.701 0 6.492 0 2.912 3.59 0 8 0ZM5.022 7.686H3.497V4.918a.156.156 0 0 0-.155-.156H2.78a.156.156 0 0 0-.156.156v3.486c0 .041.017.08.044.107v.001l.002.002.002.002a.154.154 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157Zm.791-2.924a.156.156 0 0 0-.156.156v3.486c0 .086.07.155.156.155h.562c.086 0 .155-.07.155-.155V4.918a.156.156 0 0 0-.155-.156h-.562Zm3.863 0a.156.156 0 0 0-.156.156v2.07L7.923 4.832a.17.17 0 0 0-.013-.015v-.001a.139.139 0 0 0-.01-.01l-.003-.003a.092.092 0 0 0-.011-.009h-.001L7.88 4.79l-.003-.002a.029.029 0 0 0-.005-.003l-.008-.005h-.002l-.003-.002-.01-.004-.004-.002a.093.093 0 0 0-.01-.003h-.002l-.003-.001-.009-.002h-.006l-.003-.001h-.004l-.002-.001h-.574a.156.156 0 0 0-.156.155v3.486c0 .086.07.155.156.155h.56c.087 0 .157-.07.157-.155v-2.07l1.6 2.16a.154.154 0 0 0 .039.038l.001.001.01.006.004.002a.066.066 0 0 0 .008.004l.007.003.005.002a.168.168 0 0 0 .01.003h.003a.155.155 0 0 0 .04.006h.56c.087 0 .157-.07.157-.155V4.918a.156.156 0 0 0-.156-.156h-.561Zm3.815.717v-.56a.156.156 0 0 0-.155-.157h-2.242a.155.155 0 0 0-.108.044h-.001l-.001.002-.002.003a.155.155 0 0 0-.044.107v3.486c0 .041.017.08.044.107l.002.003.002.002a.155.155 0 0 0 .108.043h2.242c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156v-.56a.156.156 0 0 0-.155-.157H11.81v-.589h1.525c.086 0 .155-.07.155-.156Z'></path>
+</svg>
+</a>
+<a class='btn btn-outline-secondary' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://twitter.com/share?url=https://www.poggitdev.netlify.app/p/writer.html' role='button' target='_blank' title='Twitter'>
+<svg class='bi bi-twitter' fill='currentColor' height='25' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+<path d='M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z'></path>
+</svg>
+</a>
+<a class='btn btn-outline-secondary' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://www.facebook.com/sharer.php?u=https://www.poggitdev.netlify.app/p/writer.html' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' role='button' target='_blank' title='Facebook'>
+<svg class='bi bi-facebook' fill='currentColor' height='25' viewBox='0 0 17 17' width='18' xmlns='http://www.w3.org/2000/svg'>
+<path d='M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z'></path>
+</svg>
+</a>
+<a class='btn btn-outline-secondary' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://www.linkedin.com/sharing/share-offsite/?url=https://www.poggitdev.netlify.app/p/writer.html' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' role='button' target='_blank' title='Linkedin'>
+<svg class='bi bi-linkedin' fill='currentColor' height='25' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z'></path></svg>
+</a>
+<a class='btn btn-outline-secondary' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://api.whatsapp.com/send?text=https://www.poggitdev.netlify.app/p/writer.html' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' role='button' target='_blank' title='WhatsApp'>
+<svg class='bi bi-whatsapp' fill='currentColor' height='25' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z'></path></svg>
+</a>
+<a class='btn btn-outline-secondary' data-bs-placement='bottom' data-bs-toggle='tooltip' href='https://t.me/share/url?url=https://www.poggitdev.netlify.app/p/writer.html' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' role='button' target='_blank' title='Telegram'>
+<svg class='bi bi-telegram' fill='currentColor' height='25' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z'></path>
+</svg>
+</a>
+</main>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='post-body entry-content float-container card-body' id='post-body-7097413492558291100'>
+<script type='application/ld+json'>{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.poggitdev.netlify.app/"
+          }
+        ]
+      }</script>
+<h2>Syarat & Ketentuan</h2>
+<ol>
+  <li>Memiliki umur 15+.</li>
+  <li>Bisa bahasa pemograman HTML, CSS, dan Javascript.</li>
+  <li>Mengetahui seputar Minecraft.</li>
+  <li>Mengetahui seputar PocketMine-MP</li>
+  <li>Menghormati sesama penulis</li>
+</ol>
+<h2>Larangan</h2>
+<ol>
+  <li>Dilarang menjual plugin dengan fitur rendah & harga mahal.</li>
+  <li>Dilarang menjual plugin yang awal dibagikan secara <u>Gratis</u>.</li>
+  <li>Dilarang menjual plugin yang memiliki fitur rendah.</li>
+  <li>Dilarang membagikan plugin <u>Rusak</u>.</li>
+  <li>Dilarang promosi di Website tanpa izin admin.</li>
+  <li>Dilarang berjualan selain plugin.</li>
+  <li>Dilarang menghapus postingan plugin (harus izin admin/penulis plugin tersebut.)</li>
+</ol>
+<h2>Biaya</h2>
+<p>Harga penulis hanya IDR 10.000 saja, aktif selamanya. Jika admin yang mengundang kalian biayanya <u>Gratis</u>.</p>
+<p>Minat untuk bergabung? silahkan chat admin <a href='https://wa.me/+6281381685954'>Disini</a></p>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+</div>
+</div>
+</div>
+</div>
+<section class='comments' data-num-comments='0' id='comments'>
+<a name='comments'></a>
+</section>
+</article>
+</div>
+</div>
+</div>
+</article>
+</section>
+<!-- Sidebar Left -->
+<div class='col-12 col-lg-4' id='sidebar-wrapper'>
+<div class='sidebar sticky-top section' id='sidebarSticky'><div class='widget HTML' data-version='2' id='HTML5'>
+<div class='widget-content'>
+<!-- PopUp: Cookies Consent -->
+<div aria-hidden='true' aria-labelledby='cookiesPopUp' class='modal fade hidden' data-bs-backdrop='static' id='ckBox' tabindex='-1'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <h1 class='modal-title fs-5' id='cookiesPopUp'>Cookies Consent</h1>
+        <button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'/>
+      </button></div>
+      <div class='modal-body'>This website uses cookies to ensure you get the best experience on our website.</div>
+      <div class='modal-footer'>
+        <button class='btn btn-secondary' href='https://policies.google.com/technologies/cookies' type='button'>Learn More</button>
+        <button class='btn btn-primary' id='ckAcptBtn' type='button'>Accept</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div><div class='widget HTML' data-version='2' id='HTML3'>
+<h3 class='title'>
+Table Content
+</h3>
+<div class='widget-content'>
+<div class="docs-toc scroll">
+<div class="Toc">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--[ End Row ]-->
+</div>
+</div>
+<!-- Error Page 404 -->
+<footer class='text-bg-dark'>
+<!--[ Footer Sosial ]-->
+<!--<div class='Footer-sosial w-auto p-3 position-relative d-grid align-items-center'> <div class='d-flex gap-1 flex-wrap justify-content-center'> <a class='btn btn-dark' data-bs-placement='bottom' data-bs-toggle='tooltip' href='#' role='button' target='_blank' title='YouTube'> <svg class='bi bi-youtube' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z'/></svg> </a> <a class='btn btn-dark' data-bs-placement='bottom' data-bs-toggle='tooltip' href='#' role='button' target='_blank' title='Instagram'> <svg class='bi bi-instagram' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z'/></svg> </a> <a class='btn btn-dark' data-bs-placement='bottom' data-bs-toggle='tooltip' href='#' role='button' target='_blank' title='Twitter'> <svg class='bi bi-twitter' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z'/></svg> </a> <a class='btn btn-dark' data-bs-placement='bottom' data-bs-toggle='tooltip' href='#' role='button' target='_blank' title='Facebook'> <svg class='bi bi-facebook' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z'/></svg> </a> <a class='btn btn-dark' data-bs-placement='bottom' data-bs-toggle='tooltip' href='#' role='button' target='_blank' title='Codepen'> <svg fill='currentColor' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M16.5 13.202 13 15.535v3.596L19.197 15 16.5 13.202ZM14.697 12 12 10.202 9.303 12 12 13.798 14.697 12ZM20 10.868 18.303 12 20 13.132v-2.264ZM19.197 9 13 4.869v3.596l3.5 2.333L19.197 9ZM7.5 10.798 11 8.465V4.869L4.803 9 7.5 10.798ZM4.803 15 11 19.131v-3.596l-3.5-2.333L4.803 15ZM4 13.132 5.697 12 4 10.868v2.264ZM2 9a1 1 0 0 1 .445-.832l9-6a1 1 0 0 1 1.11 0l9 6A1 1 0 0 1 22 9v6a1 1 0 0 1-.445.832l-9 6a1 1 0 0 1-1.11 0l-9-6A1 1 0 0 1 2 15V9Z'/></svg> </a> <a class='btn btn-dark' data-bs-placement='bottom' data-bs-toggle='tooltip' href='#' role='button' target='_blank' title='Twitch'> <svg class='bi bi-heart-fill' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z' fill-rule='evenodd'/></svg> </a> <a class='btn btn-dark' data-bs-placement='bottom' data-bs-toggle='tooltip' href='#' role='button' target='_blank' title='GitHub'> <svg class='bi bi-github' fill='currentColor' height='16' viewBox='0 0 16 16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z'/></svg> </a> </div> </div>-->
+<div class='Footer-menu p-3 p-sm-5'>
+<div class='container mx-auto'>
+<!--[ Footer Menu ]-->
+<div class='row gap-2 row-cols-md-auto row-cols-sm-2 justify-content-between'>
+<div class='col-md-3 col-sm-8'>
+<div class='section' id='footer-widget-1'><div class='widget HTML' data-version='2' id='HTML1'>
+<h3 class='title'>
+Protected by DMCA
+</h3>
+<div class='widget-content'>
+<p class='abtD'>All posts are protected by <b>DMCA</b>.<br />Reproduction in any form is strictly prohibited!</p>
+              <div class="made-support">
+              <a href="https://www.dmca.com/Protection/Status.aspx?ID=XXXX" title="DMCA.com Protection Status" class="dmca-badge" target="_blank">
+              <span class="dmca-sample"></span>
+              </a>
+              <script src="../Badges/DMCABadgeHelper.min.js"></script>
+              </div>
+              <style>
+              .abtD a{color:#ffff00}
+              .made-support {margin-top:5px}
+              </style>
+</div>
+</div></div>
+</div>
+<div class='col-md-2 col-sm-auto'>
+<div class='section' id='footer-widget-2'><div class='widget LinkList' data-version='2' id='LinkList2'>
+<h3 class='title'>
+Company
+</h3>
+<div class='widget-content'>
+<ul>
+<li><a href='../p/sitemap.html'>Sitemap</a></li>
+<li><a href='../p/disclaimer.html'>Disclaimer</a></li>
+<li><a href='../p/privacy-policy.html'>Privacy Policy</a></li>
+<li><a href='../p/terms-conditions.html'>Terms Conditions</a></li>
+</ul>
+</div>
+</div></div>
+</div>
+<div class='col-md-2 col-sm-auto'>
+<div class='no-items section' id='footer-widget-32'>
+</div>
+</div>
+<div class='col-md-2 col-sm-auto'>
+<div class='section' id='footer-widget-4'><div class='widget LinkList' data-version='2' id='LinkList4'>
+<h3 class='title'>
+Support
+</h3>
+<div class='widget-content'>
+<ul>
+<li><a href='../p/contact.html'>Contact</a></li>
+<li><a href='../p/faq.html'>Forum Diskusi</a></li>
+<li><a href='../p/request.html'>Request Plugin</a></li>
+</ul>
+</div>
+</div></div>
+</div>
+<div class='col-md-2 col-sm-auto'>
+<div class='no-items section' id='footer-widget-5'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--[ Footer Copyright ]-->
+<div class='Fc container mx-auto card-footer py-2 border-T px-5'>
+<div class='Footer-Copyright p-3 text-center'>
+      &#169; <span id='getYear'><script>/*<![CDATA[*/ var d = new Date(); var n = d.getFullYear(); document.getElementById('getYear').innerHTML = n; /*]]>*/</script></span>
+<a class='NameBlog' href='../index.html' title='PocketMine-MP Dev'><span title='PocketMine-MP Dev'>PocketMine-MP Dev</span></a>
+      &#8231; Made with <i class='bi bi-heart-fill'></i> by <a class='link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover' href='https://www.inputekno.com/' id='itC' title='InpuTekno'>InpuTekno</a>
+<!-- Please Dont Remove Or Change My Link -->
+</div>
+</div>
+</footer>
+</div>
+<!--[ Toast Notif ]-->
+<div class='position-fixed bottom-0 end-0 p-3' style='width:320px; z-index:5;'>
+<div aria-atomic='true' aria-live='assertive' class='toast text-dark bg-white border hide' data-bs-animation='true' id='liveToast1' role='alert'>
+<div class='d-flex p-2'>
+<div class='toast-body'>
+         Link copied to clipboard
+       </div>
+<button aria-label='Close' class='btn-close me-2 m-auto' data-bs-dismiss='toast' type='button'></button>
+</div>
+</div>
+</div>
+<!-- PopUp: Coming Soon -->
+<div aria-hidden='true' aria-labelledby='comingSoon' class='modal fade' id='comingSoon' tabindex='-1'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h1 class='modal-title fs-5' id='exampleModalLabel'>Notification</h1>
+<button aria-label='Close' class='btn-close' data-bs-dismiss='modal' type='button'></button>
+</div>
+<div class='modal-body'>Fitur ini akan segera hadir.....</div>
+<div class='modal-footer'>
+<button class='btn btn-secondary' data-bs-dismiss='modal' type='button'>Close</button>
+<!--<button type="button" class="btn btn-primary">Save changes</button>-->
+</div>
+</div>
+</div>
+</div>
+<script src='../npm/-popperjs/core-2.11.8/dist/umd/popper.min.js'></script>
+<script src='../npm/bootstrap-5.3.0/dist/js/bootstrap.min.js'></script>
+<!--[ Javascript Bootstrap ]-->
+<script src='../jquery-3.7.0.min.js'></script>
+<script type='text/javascript'>/*<![CDATA[*/ var content=document.querySelector(".post-body"),headings=content.querySelectorAll(".post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body h6, .post-body h7"),headingMap={};Array.prototype.forEach.call(headings,function(e){var t=e.id?e.id:e.textContent.toLowerCase().replace(/[^a-z -]/gi,"").trim().split(" ").join("-").replace(/--/g,"-");headingMap[t]=isNaN(headingMap[t])?0:++headingMap[t],headingMap[t]?e.id=t+"-"+headingMap[t]:e.id=t}),tocbot.init({tocSelector:".Toc",contentSelector:".post-body",headingSelector:"h2, h3, h4, h5, h6, h7",hasInnerContainers:!0,listItemClass:"toc-list-item",orderedList:!1,headingsOffset:1}); 
+/*]]>*/</script>
+<script type='text/javascript'>/*<![CDATA[*/"use strict";$(document).ready(function(){var e,t,r;e=window,t=document,(r=$("footer.text-bg-dark > .Fc > .Footer-Copyright > a#itC")).length?(e.validurlit=function(e){return/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/.test(e)},e.sUp=function(e){t.querySelector(e).parentNode.style.height="0"},e._GET=function(e,t){t||(t=location.href);var r=RegExp("[\\?&]"+(e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]"))+"=([^&#]*)").exec(t);return null==r?null:r[1]},r.attr("href","https://discord.com/invite/2PxVWgJxRj").text("PoggitDev")):location.href="https://discord.com/invite/2PxVWgJxRj"});
+{let a=document.createElement("a");a.href="https://discord.com/invite/2PxVWgJxRj",a.target="_blank",a.text="PoggitDev",a.rel="noopener",a.title="Bstrap Power By YunusVG",document.querySelector(".Footer-Copyright").appendChild(a).style.display="none";}
+/* Darkmode */
+(()=>{"use strict";let e=localStorage.getItem("theme"),t=()=>e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),a=function(e){"auto"===e&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.setAttribute("data-bs-theme","dark"):document.documentElement.setAttribute("data-bs-theme",e)};a(t());let c=e=>{let t=document.querySelector(".theme-icon-active"),a=document.querySelector(`[data-bs-theme-value="${e}"]`),c=a.querySelector("i").dataset.themeIcon;document.querySelectorAll("[data-bs-theme-value]").forEach(e=>{e.classList.remove("active")}),a.classList.add("active"),t.classList.remove(t.dataset.themeIconActive),t.classList.add(c),t.dataset.iconActive=c};window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{("light"!==e||"dark"!==e)&&a(t())}),window.addEventListener("DOMContentLoaded",()=>{c(t()),document.querySelectorAll("[data-bs-theme-value]").forEach(e=>{e.addEventListener("click",()=>{let t=e.getAttribute("data-bs-theme-value");localStorage.setItem("theme",t),a(t),c(t,!0)})})})})();
+/* Tooltops Bootstrap */
+var tooltipTriggerList=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')),tooltipList=tooltipTriggerList.map(function(t){return new bootstrap.Tooltip(t)});
+/* Share Link */
+function copyPostUrl(){document.getElementById("closeWilltoCopyPostUrl").click();var e=document.getElementById("sharePostUrl");e.select(),navigator.clipboard.writeText(e.value),new bootstrap.Toast(document.getElementById("liveToast1")).show()}
+/* Pre Content Copy */
+for(var preClick=document.getElementsByTagName("pre"),i=0;i<preClick.length;i++)preClick[i].addEventListener("dblclick",function(){var e=getSelection(),o=document.createRange();o.selectNodeContents(this),e.removeAllRanges(),e.addRange(o),document.execCommand("copy"),e.removeAllRanges(),new bootstrap.Toast(document.getElementById('liveToast1')).show();},!1);
+/* CDN Image Statically */
+for(var images=document.getElementsByTagName("img"),i=0;i<images.length;i++)images[i].src=images[i].src.replace(/(http|https):\/\//,"https://cdn.statically.io/img/")+"?f=webp";
+/*]]>*/</script>
+<script type='text/javascript'>//<![CDATA[
+/*!***************************************************
+ * google-translate.js v1.0.5
+ * https://Get-Web.Site/
+ * author: Vitalii P.
+ *****************************************************/
+const googleTranslateConfig = {
+	/* Original language */
+	lang: "id",
+	/* The language we translate into on the first visit*/
+	/* langFirstVisit: 'en', */
+	/* If the script does not work or does not work correctly, uncomment and specify the main domain in the domain property */
+	/* domain: "Get-Web.Site" */
+};
+document.addEventListener("DOMContentLoaded", (event) => {
+	/* Connecting the google translate widget */
+	let script = document.createElement("script");
+	script.src = `//translate.google.com/translate_a/element.js?cb=TranslateWidgetIsLoaded`;
+	document.getElementsByTagName("head")[0].appendChild(script);
+});
+function TranslateWidgetIsLoaded() {
+	TranslateInit(googleTranslateConfig);
+}
+function TranslateInit(config) {
+	if (config.langFirstVisit && !Cookies.get("googtrans")) {
+		/* If the translation language is installed for the first visit and cookies are not assigned */
+		TranslateCookieHandler("/auto/" + config.langFirstVisit);
+	}
+	let code = TranslateGetCode(config);
+	TranslateHtmlHandler(code);
+	if (code == config.lang) {
+		/* If the default language is the same as the language we are translating into, then we clear the cookies */
+		TranslateCookieHandler(null, config.domain);
+	}
+	/* Initialize the widget with the default language */
+	new google.translate.TranslateElement({
+		pageLanguage: config.lang,
+		multilanguagePage: true, // Your page contains content in more than one languages
+	});
+	/* Assigning a handler to the flags */
+	TranslateEventHandler("click", "[data-google-lang]", function (e) {
+		TranslateCookieHandler(
+			"/" + config.lang + "/" + e.getAttribute("data-google-lang"),
+			config.domain
+		);
+		/* Reloading the page */
+		window.location = config.lang;
+	});
+}
+function TranslateGetCode(config) {
+	/* If there are no cookies, then we pass the default language */
+	let lang =
+		Cookies.get("googtrans") != undefined && Cookies.get("googtrans") != "null"
+			? Cookies.get("googtrans")
+			: config.lang;
+	return lang.match(/(?!^\/)[^\/]*$/gm)[0];
+}
+function TranslateCookieHandler(val, domain) {
+	/* Writing down cookies /language_for_translation/the_language_we_are_translating_into */
+	Cookies.set("googtrans", val);
+	Cookies.set("googtrans", val, {
+		domain: "." + document.domain,
+	});
+	Cookies.remove('googtrans', { domain: "." + "inputekno.com" }); // removed!
+	if (domain == "undefined") return;
+	/* записываем куки для домена, если он назначен в конфиге */
+	/* Writing down cookies for the domain, if it is assigned in the config */
+	Cookies.set("googtrans", val, {
+		domain: domain,
+	});
+	Cookies.set("googtrans", val, {
+		domain: "." + domain,
+	});
+}
+function TranslateEventHandler(event, selector, handler) {
+	document.addEventListener(event, function (e) {
+		let el = e.target.closest(selector);
+		if (el) handler(el);
+	});
+}
+function TranslateHtmlHandler(code) {
+	/* We get the language to which we translate and produce the necessary manipulations with DOM */
+	if (document.querySelector('[data-google-lang="' + code + '"]') !== null) {
+		document
+			.querySelector('[data-google-lang="' + code + '"]')
+			.classList.add("active");
+	}
+}
+//]]></script>
+<script>/*<![CDATA[*/
+/* Cookies Consent Notice Script by Fineshop */
+var ckBox=document.querySelector("#ckBox"),ckAcptBtn=document.querySelector("#ckAcptBtn"),ckErrMes="Cookie can't be set! Please unblock this site from the cookie setting of your browser.";if(null!=ckBox){ckAcptBtn.onclick=()=>{document.cookie="CookieConsentByFineshop=Accepted; max-age=2592000; path=/",document.cookie?ckBox.classList.add("acptd"):alert(ckErrMes)};let e=document.cookie.indexOf("CookieConsentByFineshop=Accepted");-1!=e?ckBox.classList.add("hidden"):ckBox.classList.remove("hidden")}
+/*]]>*/</script>
+<!--
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2061172683-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY5C3ow5Pz1GePDwTLiV2fxTh3fTvQ:1722600117692';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7434658898468603518','//www.poggitdev.netlify.app/p/writer.html','7434658898468603518');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7434658898468603518', 'title': 'PocketMine-MP Dev', 'url': 'https://www.poggitdev.netlify.app/p/writer.html', 'canonicalUrl': 'https://www.poggitdev.netlify.app/p/writer.html', 'homepageUrl': 'https://www.poggitdev.netlify.app/', 'searchUrl': 'https://www.poggitdev.netlify.app/search', 'canonicalHomepageUrl': 'https://www.poggitdev.netlify.app/', 'blogspotFaviconUrl': 'https://www.poggitdev.netlify.app/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'id', 'localeUnderscoreDelimited': 'id', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22PocketMine-MP Dev - Atom\x22 href\x3d\x22https://www.poggitdev.netlify.app/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22PocketMine-MP Dev - RSS\x22 href\x3d\x22https://www.poggitdev.netlify.app/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22PocketMine-MP Dev - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7434658898468603518/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/d06473e45d4d8fd5', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Dapatkan link', 'key': 'link', 'shareMessage': 'Dapatkan link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Bagikan ke Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Bagikan ke Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Bagikan ke Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27id\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': true, 'jumpLinkMessage': 'Read more \xbb', 'pageType': 'static_page', 'pageId': '7097413492558291100', 'pageName': 'Writer', 'pageTitle': 'PocketMine-MP Dev: Writer', 'metaDescription': ''}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Tautan disalin ke papan klip!', 'ok': 'Oke', 'postLink': 'Tautan Pos'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Khusus', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Writer', 'description': 'Sebuah Situs Yang Memberikan Beberapa Plugin Dari Software Pocketmine-MP Untuk Server Minecraft Secara Gratis !', 'url': 'https://www.pmmpdev.eu.org/p/writer.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': true, 'isPost': false, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'pageId': 7097413492558291100}}, {'name': 'widgets', 'data': [{'title': 'PocketMine-MP Dev (Header)', 'type': 'Header', 'sectionId': 'navbar', 'id': 'Header1'}, {'title': '?m\x3d1 hider ( Not Recommended )', 'type': 'HTML', 'sectionId': 'navbar', 'id': 'HTML28'}, {'title': 'Off Canvas Menu', 'type': 'LinkList', 'sectionId': 'OffCanvasMenu', 'id': 'LinkList1'}, {'title': 'Postingan Blog', 'type': 'Blog', 'sectionId': 'main', 'id': 'Blog1', 'posts': [{'id': '7097413492558291100', 'title': 'Writer', 'showInlineAds': false}], 'headerByline': {'regionName': 'header1', 'items': [{'name': 'author', 'label': 'Oleh'}, {'name': 'timestamp', 'label': ''}]}, 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'comments', 'label': 'comments'}]}, {'regionName': 'footer2', 'items': [{'name': 'labels', 'label': 'Labels:'}]}], 'allBylineItems': [{'name': 'author', 'label': 'Oleh'}, {'name': 'timestamp', 'label': ''}, {'name': 'comments', 'label': 'comments'}, {'name': 'labels', 'label': 'Labels:'}]}, {'title': 'Label', 'type': 'Label', 'sectionId': 'sidebar', 'id': 'Label1'}, {'title': 'Popular Plugins', 'type': 'PopularPosts', 'sectionId': 'sidebar', 'id': 'PopularPosts1', 'posts': [{'title': 'HatsPlusPM v1.0.0', 'id': 8387866930387598100}, {'title': 'IceBomb v1.0.0', 'id': 115619295344305014}, {'title': 'PlayerBounties v1.0.0', 'id': 781001385045787104}, {'title': 'MyTime v1.0.0', 'id': 3843850142528193212}, {'title': 'RolesManager v1.0.4', 'id': 7610729993000932731}]}, {'title': '', 'type': 'HTML', 'sectionId': 'sidebarSticky', 'id': 'HTML5'}, {'title': 'Table Content', 'type': 'HTML', 'sectionId': 'sidebarSticky', 'id': 'HTML3'}, {'title': 'Take me back', 'type': 'HTML', 'sectionId': 'error-404', 'id': 'HTML404'}, {'title': 'Protected by DMCA', 'type': 'HTML', 'sectionId': 'footer-widget-1', 'id': 'HTML1'}, {'title': 'Company', 'type': 'LinkList', 'sectionId': 'footer-widget-2', 'id': 'LinkList2'}, {'title': 'Support', 'type': 'LinkList', 'sectionId': 'footer-widget-4', 'id': 'LinkList4'}]}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'navbar', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML28', 'navbar', document.getElementById('HTML28'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'OffCanvasMenu', document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1176643302-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/13464135-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar', document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebarSticky', document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebarSticky', document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML404', 'error-404', document.getElementById('HTML404'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'footer-widget-1', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'footer-widget-2', document.getElementById('LinkList2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList4', 'footer-widget-4', document.getElementById('LinkList4'), {}, 'displayModeFull'));
+</script>
+</body>--></body>
+</html>
